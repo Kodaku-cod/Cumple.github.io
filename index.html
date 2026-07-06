@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi princesa hermosa ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Fondo -->
+    <div class="background"></div>
+
+    <!-- Canvas confetti -->
+    <canvas id="confetti"></canvas>
+
+    <!-- Corazones -->
+    <div id="hearts-container"></div>
+
+    <!-- Sakura -->
+    <div id="sakura-container"></div>
+
+    <!-- Pantalla de inicio -->
+    <div id="game" class="screen">
+
+        <!-- Tarjeta -->
+        <div class="card fade">
+
+            <h1 id="title">
+                Feliz cumpleaños ❤️
+            </h1>
+
+            <p id="question">
+                ¿Quieres comenzar esta pequeña sorpresa?
+            </p>
+
+            <div id="content">
+
+                <div class="buttons">
+
+                    <button id="yesBtn" onclick="nextQuestion()">
+                        Sí 💖
+                    </button>
+
+                    <button id="noBtn" onmouseover="moveButton()">
+                        No 💔
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- APP PRINCIPAL -->
+    <main id="app" class="hidden">
+
+        <!-- Tiempo juntos -->
+        <section class="card">
+
+            <h2>
+                Desde que llegaste a mi vida ❤️
+            </h2>
+
+            <p id="time-counter">
+                0 días
+            </p>
+
+        </section>
+
+
+
+        <!-- Carta -->
+
+        <section class="card">
+
+            <h2>
+                Una carta para ti 💌
+            </h2>
+
+            <div class="letter-container" onclick="openLetter()">
+
+                <div class="envelope">
+
+                    <div class="flap"></div>
+
+                </div>
+
+                <div class="paper">
+
+                    <p id="letter-text"></p>
+
+                </div>
+
+            </div>
+
+            <p class="hint">
+                Toca el sobre para abrirlo ❤️
+            </p>
+
+        </section>
+
+
+
+        <!-- Mensaje final -->
+
+        <section class="card end-card hidden" id="endCard">
+
+            <h1>
+                Feliz cumpleaños mi amor ❤️
+            </h1>
+
+            <p>
+                Gracias por existir.<br><br>
+
+                Espero que este pequeño detalle te saque una sonrisa,
+                porque hacerte feliz siempre será una de mis cosas favoritas.
+
+                ❤️
+            </p>
+
+        </section>
+
+    </main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
